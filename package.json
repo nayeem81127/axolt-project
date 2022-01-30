@@ -25,6 +25,7 @@
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "pg": "^8.7.1",
+    "request": "^2.88.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
