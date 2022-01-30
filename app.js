@@ -11,6 +11,8 @@ var session = require("express-session");
 
 var app = express();
 
+app.use('/public', express.static(__dirname + '/public'));
+
 app.use(require('cookie-parser')());
 app.use(require('body-parser').urlencoded({ extended: true }));
 
@@ -22,7 +24,6 @@ var bodyParser = require('body-parser')
 
 var path = require('path');
 
-app.use('/public', express.static(__dirname + '/public'));
 
 app.use(flash());
 app.use(session({
